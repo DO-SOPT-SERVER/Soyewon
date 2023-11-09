@@ -7,14 +7,14 @@ import lombok.*;
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
-public class Member {
+public class Member extends BaseTimeEntity{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private String nickname;
-    private int age;
+    private int age; // short 사용해도 ㄱㅊ을지도.?
 
     @Embedded
     private SOPT sopt;

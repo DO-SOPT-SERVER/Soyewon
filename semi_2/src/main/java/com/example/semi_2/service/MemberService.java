@@ -1,6 +1,6 @@
 package com.example.semi_2.service;
 
-import com.example.semi_2.MemberJpaRepository;
+import com.example.semi_2.repository.MemberJpaRepository;
 import com.example.semi_2.domain.Member;
 import com.example.semi_2.dto.request.MemberCreateRequest;
 import com.example.semi_2.dto.response.MemberGetResponse;
@@ -9,7 +9,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.net.URI;
 import java.util.List;
 import java.util.stream.Collectors;
 
